@@ -1,0 +1,21 @@
+$primary: #AA0601;
+$secondary: #FFFFFF;
+$accent: #000000;
+
+.bg-primary{
+    background: $primary;
+}
+
+.bg-accent{
+    background: #000000;
+}
+
+.text-primary{
+    color: $primary;
+}
+
+.text-secondary{
+    color: $secondary;
+}
+
+/*color end*/
