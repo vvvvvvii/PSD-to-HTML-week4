@@ -1,0 +1,56 @@
+.FAQmain{
+    padding-top: 80px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include phone(){
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+}
+
+.FAQtopic{
+    margin-bottom: 36px;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bold;
+    @include phone(){
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.question{
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    @include phone(){
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.ans{
+    width: 82.88%;
+    margin-left: auto;
+    margin-right: auto; /*直接下m0-auto會覆蓋mb40*/
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    @include pad(){
+        width: 91.66%;
+        margin-left: 8.34%;
+    }
+    @include phone(){
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
