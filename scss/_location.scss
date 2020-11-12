@@ -1,0 +1,200 @@
+.location_detail_main{
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 304px;
+    @include pad(){
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 8px;
+        padding-bottom: 104px;
+    }
+    @include phone(){
+        padding-bottom: 56px;
+    }
+}
+
+.locationInfo{
+    width: 41.66%;
+    @include pad(){
+        display: flex;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    @include phone(){
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+}
+
+.locationMap{
+    width: 58.33%;
+    padding-top: 93px;
+    margin-left: 30px;
+    @include pad(){
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+}
+
+.locationDetail{
+    @include pad(){
+        width: 50%;
+        margin-top: 84.5px; //好像只能用mt推...沒辦法統一推的方向
+        margin-left: 30px;
+    }
+    @include phone(){
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.chooseStore{
+    @include pad(){
+        width: 50%;
+    }
+    @include phone(){
+        width: 100%;
+    }
+}
+
+.chooseTopic{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 32px;
+    @include display-inline;
+    @include pad(){
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 24px;
+    }
+    @include phone(){
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.storeOption{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 150px 10px 19px;
+    margin-bottom: 32px;
+    @include pad(){
+        font-size: 16px;
+        line-height: 22px;
+        padding: 12px 109px 12px 16px;
+        margin-bottom: 24px;
+    }
+    @include phone(){
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 163px 8px 16px;
+        margin-bottom: 20px;
+    }
+    @include iphone8(){
+        padding: 8px 100px 8px 16px;
+    }
+    @include iphone6(){
+        padding: 8px 80px 8px 16px;
+    }
+}
+
+.storeName{
+    font-size: 24px;
+    line-height: 36px;
+    border: 1px solid #00000020;
+    padding: 12px 0 12px 24px;
+    @include pad(){
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        padding: 8px 0 8px 16px;
+    }
+    @include phone(){
+        font-weight: normal;
+    }
+}
+
+.storeDetail{
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #00000020;
+    padding: 16px 0 16px 24px;
+    @include pad(){
+        font-size: 14px;
+        line-height: 21px;
+        padding: 16px 0 16px 16px;
+    }
+}
+
+.storeDetail li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /*只想到這個方法讓icon跟p對齊*/
+}
+
+.storeDetail img{
+    width: 21px;
+    height: 21px;
+    @include pad(){
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.storeDetail p{
+    width: 81.5%;;
+}
+
+.location_list_main{
+    padding-top: 16px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-top: 8px;
+        padding-bottom: 104px;
+    }
+    @include phone(){
+        padding-bottom: 56px;
+    }
+}
+
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.card{
+    width: 30.703%;
+    margin: 0 15px 32px;
+    @include pad(){
+        width: 40%;
+    }
+    @include phone(){
+        width: 50%;
+    }
+    @include iphone8(){
+        width: 60%;
+    }
+    @include iphone6(){
+        width: 100%;
+    }
+}
+
+.storeImg{
+    max-height: 233px;
+}
+
+.moreInfo{
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 26px;
+    @include pad(){
+        padding: 16px 0px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
