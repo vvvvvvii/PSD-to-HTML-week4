@@ -1,0 +1,296 @@
+.mb-1{
+    margin-bottom: 8px;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @include pad(){
+        max-width: 914px;
+    }
+    @include phone(){
+        max-width: 737px; 
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    @include phone(){
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 28px; 
+    @include phone(){
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.topmenu li{
+    display: block;
+    @include phone(){
+        width: 47.82%; /*照container算應該要是47.82% 但用47.82邊界間會有空隙*/
+        border: 1px solid #fff;
+    }
+}
+
+.topmenu li a{
+    padding: 0 32px;
+    display: block;
+    @include pad(){
+        padding: 0 20px;
+    }
+    @include phone(){
+        padding: 8px 0;
+    }
+}
+
+.headerLogo{
+    width: 80px;
+    height: 48.57px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://github.com/vvvvvvii/PSD-to-HTML-week3/blob/main/img/logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?raw=true");
+    @include hide-text();
+    @include phone(){
+        width: 48px;
+        height: 29.14px;
+    }
+}
+
+/*header end*/
+
+.bg-banner {
+    background-image: url('https://github.com/vvvvvvii/PSD-to-HTML-week3/blob/main/img/72.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 304px;
+    @include phone(){
+        height: 143px;
+        background-size: cover;
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    height: inherit; /*讓高度繼承bg-banner的設定*/
+}
+
+.bannerIcon {
+    height: 57.9px;
+    margin-left: 24px;
+    padding-bottom: 16.1px; /*不知道有沒有更好的寫法*/
+    @include pad(){
+        width: 48px;
+        margin-left: 16px;
+        padding-bottom: 9px;
+    }
+    @include phone(){
+        width: 24px;
+        margin-left: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+/*banner end*/
+.footer {
+    padding: 48px 0 28.43px;
+    @include pad(){
+        padding: 40px 0;
+    }
+    @include phone(){
+        padding: 23px 0 21.07px;
+    }
+}
+
+.media-contact{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    @include pad(){
+        padding-bottom: 27px;
+        margin-bottom: 24px;
+    }
+    @include phone(){
+        padding-bottom: 24px;
+        margin-bottom: 18px;
+    }
+}
+
+.border{
+    border-bottom: 1px solid #fff;
+}
+
+.menu-contact{
+    width: 41.8%;
+    @include pad(){
+        width: 56.25%;
+    }
+    @include phone(){
+        width: 55.65%;
+    }
+}
+
+.footermenu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 22px;
+    @include pad(){
+        margin-bottom: 24px;
+    }
+    @include phone(){
+        display: none;
+    }
+}
+
+.contact{
+    font-size: 36px;
+    line-height: 48px;
+    @include pad(){
+        font-size: 20px;
+        line-height: 26px;
+    }
+    @include phone(){
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+.contact img, .contact h3{
+    @include display-inline;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img{
+    width: 48px;
+    margin-left: 32px;
+    @include pad(){
+        width: 24px;
+        margin-left: 24px;
+    }
+    @include phone(){
+        width: 24px;
+        margin-left: 24px;
+    }
+}
+
+.ic-tel{
+    width: 38px;
+    @include pad(){
+        width: 18px;
+    }
+    @include phone(){
+        width: 14px;
+    }
+}
+
+.ic-mail{
+    width: 40px;
+    @include pad(){
+        width: 28px;
+    }
+    @include phone(){
+        width: 16px;
+    }
+}
+
+.policy-co{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phone(){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+  
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 39.63%;
+    font-size: 16px;
+    line-height: 21px;
+    @include pad(){
+        width: auto;
+    }
+    @include phone(){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 7px;
+    }
+}
+  
+.footerlogo{
+    width: 80px;
+    @include pad(){
+        display: none;
+    }
+}
+
+.policy{
+    width: 16.93%;
+    @include pad(){
+        width: 19.53%;
+    }
+    @include phone(){
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+.terms{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 20px;
+    @include phone(){
+        flex-direction: column;
+        width: auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.footerlogo375{
+    display: none;
+    @include phone(){
+        display: block;
+        width: 46px;
+    }
+}
+
+.privacy{
+    @include phone(){
+        margin-bottom: 8px;
+    }
+}
+
+/*footer end*/
